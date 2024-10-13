@@ -6,8 +6,11 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  border-bottom: 5px solid #6f6f6f;
+  gap: 15rem;
 }
 
 .nav-logo img {
@@ -16,6 +19,7 @@
 
 .nav-menu {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 50px;
   color: #626262;
@@ -23,6 +27,7 @@
 
 .nav-menu li {
   margin: 0 15px;
+  text-decoration: none;
 }
 
 .nav-login-cart {
@@ -33,11 +38,10 @@
 
 .nav-login-cart button {
   margin-right: 15px;
-
   border: 1px solid #7a7a7a;
   border-radius: 75px;
   color: #515151;
-  padding: 10px 15px;
+  padding: 10px 30px;
   background: white;
   cursor: pointer;
 }
