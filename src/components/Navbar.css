@@ -22,12 +22,15 @@
   align-items: center;
   list-style: none;
   gap: 50px;
-  color: #626262;
 }
 
 .nav-menu li {
   margin: 0 15px;
+}
+
+a {
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .nav-login-cart {

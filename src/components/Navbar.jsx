@@ -11,17 +11,37 @@ function Navbar() {
         <img src={logo} alt="" />
       </div>
       <ul className="nav-menu">
-        <li>
-          <NavLink to="/">Accueille</NavLink>
+        <li className="link">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "link active" : "link")}
+          >
+            Accueil
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/ordi bureau">Ordi bureau</NavLink>
+          <NavLink
+            to="/ordi bureau"
+            className={({ isActive }) => (isActive ? "link active" : "link")}
+          >
+            Ordi bureau
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/ordi portable">Ordi portable</NavLink>
+          <NavLink
+            to="/ordi portable"
+            className={({ isActive }) => (isActive ? "link active" : "link")}
+          >
+            Ordi portable
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/piece detachees">Piece détachées</NavLink>
+          <NavLink
+            to="/piece detachees"
+            className={({ isActive }) => (isActive ? "link active" : "link")}
+          >
+            Piece détachées
+          </NavLink>
         </li>
       </ul>
       <div className="nav-login-cart">

@@ -1,11 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SharedLayout from "./layouts/SharedLayout.jsx";
 import "./App.css";
+import ErrorPage from "./ErrorPage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <SharedLayout />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
