@@ -21,7 +21,7 @@ function Navbar() {
         </li>
         <li>
           <NavLink
-            to="/ordi bureau"
+            to="/ordi-bureau"
             className={({ isActive }) => (isActive ? "link active" : "link")}
           >
             Ordi bureau
@@ -29,7 +29,7 @@ function Navbar() {
         </li>
         <li>
           <NavLink
-            to="/ordi portable"
+            to="/ordi-portable"
             className={({ isActive }) => (isActive ? "link active" : "link")}
           >
             Ordi portable
@@ -37,7 +37,7 @@ function Navbar() {
         </li>
         <li>
           <NavLink
-            to="/piece detachees"
+            to="/piece-detachees"
             className={({ isActive }) => (isActive ? "link active" : "link")}
           >
             Piece détachées
@@ -48,7 +48,7 @@ function Navbar() {
         <ul>
           <li>
             <NavLink
-              to="/login register"
+              to="/login"
               className={({ isActive }) => (isActive ? "link active" : "link")}
             >
               login register
