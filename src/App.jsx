@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SharedLayout from "./layouts/SharedLayout.jsx";
 import "./App.css";
-import ErrorPage from "./ErrorPage.jsx";
+
+import { Login, ErrorPage } from "./Pages";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,20 +17,30 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "ordi bureau",
+        path: "ordiBureau",
         // element: <Ordibureau />,
       },
 
       {
-        path: "Ordi portable",
+        path: "ordiPortable",
         // element: <Ordiportable />,
       },
 
       {
-        path: "piece détachées",
+        path: "pieceDetachees",
         // element: <Piecedétachées />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/register",
+    // element: <Register />,
+    errorElement: <ErrorPage />,
   },
 ]);
 

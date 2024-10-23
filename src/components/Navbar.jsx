@@ -45,7 +45,16 @@ function Navbar() {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <button>Login</button>
+        <ul>
+          <li>
+            <NavLink
+              to="/login register"
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+            >
+              login register
+            </NavLink>
+          </li>
+        </ul>
         <img src={cart_icon} alt="" />
         <div className="nav-cart-count">0</div>
       </div>
