@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SharedLayout from "./layouts/SharedLayout.jsx";
+import Produits from "./Pages/Produits.jsx";
+import OrdinateurDeBureau from "./Pages/OrdinateurDeBureau.jsx";
 import "./App.css";
 
 import { Login, ErrorPage } from "./Pages";
@@ -17,13 +19,27 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "ordiBureau",
-        // element: <Ordibureau />,
+        path: "produits",
+        element: <Produits />,
+        children: [
+          {
+            path: "ordinateur-de-bureau",
+            element: <OrdinateurDeBureau />,
+          },
+          {
+            path: "ordinateur-portable",
+            // element: <OrdinateurPortable />,
+          },
+          {
+            path: "pieces-detachees",
+            // element: <PiecesDetachees />,
+          },
+        ],
       },
 
       {
-        path: "ordiPortable",
-        // element: <Ordiportable />,
+        path: "contact",
+        // element: <Contact />,
       },
 
       {

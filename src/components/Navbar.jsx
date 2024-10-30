@@ -21,18 +21,18 @@ function Navbar() {
         </li>
         <li>
           <NavLink
-            to="/ordi-bureau"
+            to="/produits"
             className={({ isActive }) => (isActive ? "link active" : "link")}
           >
-            Ordi bureau
+            Produits
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/ordi-portable"
+            to="/contact"
             className={({ isActive }) => (isActive ? "link active" : "link")}
           >
-            Ordi portable
+            Contact
           </NavLink>
         </li>
         <li>
