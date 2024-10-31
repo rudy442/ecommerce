@@ -35,14 +35,6 @@ function Navbar() {
             Contact
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/piece-detachees"
-            className={({ isActive }) => (isActive ? "link active" : "link")}
-          >
-            Piece détachées
-          </NavLink>
-        </li>
       </ul>
       <div className="nav-login-cart">
         <ul>

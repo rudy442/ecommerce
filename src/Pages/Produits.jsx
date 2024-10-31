@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Form } from "react-router-dom";
 
 const CategoryForm = () => {
@@ -10,7 +10,7 @@ const CategoryForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Catégorie sélectionnée : ${category}`);
+    // alert(`Catégorie sélectionnée : ${category}`);
   };
 
   return (
